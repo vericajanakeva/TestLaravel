@@ -6,6 +6,7 @@
     <link href="../../css/app.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>
+            //this is script which dynamically fills the option and makes it easier for the user to register itself in the database.
         $(document).ready(function () {
             $("#parent").html("<option value='Angular'> Angular </option><option>React</option><option>Vue</option>");
             $("#sub").html("<option>AngularJS</option><option>Angular 2</option>");

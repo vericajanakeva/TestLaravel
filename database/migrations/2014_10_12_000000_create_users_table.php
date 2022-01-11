@@ -11,6 +11,8 @@ class CreateUsersTable extends Migration
      *
      * @return void
      */
+ // First i created the database for the application. I used the model down below. I used the php:artisan make:migration and created a Model called User.
+    //Then i connected the application with the database.The info is provided in the .env file.
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {

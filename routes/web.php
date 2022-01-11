@@ -17,11 +17,11 @@ use App\Http\Controllers\CustomAuthController;
 Route::get('/', function () {
     return view('welcome');
 });
+//these are the routes i created for the application
 Route::get('users/login', 'App\Http\Controllers\UsersController@login')->name('users.login');
 Route::get('users/login1', 'App\Http\Controllers\UsersController@login1')->name('users.login1');
 Route::post('users/login1', 'App\Http\Controllers\UsersController@login1')->name('users.login1');
 Route::post('users/validate', 'App\Http\Controllers\UsersController@validatelogin')->name('users.validate');
-//Route::get('users/redirect', 'App\Http\Controllers\UsersController@validate_redirect')->name('users.validate1');
 Route::post('users/redirect', 'App\Http\Controllers\UsersController@validate_redirect')->name('users.validate1');
 Route::get('users/authenticated', 'App\Http\Controllers\UsersController@authenticatedview')->name('users.authenticated');
 Route::get('logout','App\Http\Controllers\UsersController@logout')->name('logout');
@@ -31,7 +31,3 @@ Route::post('users/{user}', 'App\Http\Controllers\UsersController@destroy')->nam
 
 Route::resource('users','App\Http\Controllers\UsersController');
 
-
-//Auth::routes();
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
